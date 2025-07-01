@@ -1,0 +1,110 @@
+/* src/components/Quotes.css */
+
+.quotes-container {
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.quotes-container h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+.quotes-container form {
+    margin-bottom: 40px;
+    border: 1px solid #e0e0e0;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.quotes-container form input,
+.quotes-container form select,
+.quotes-container form textarea,
+.quotes-container form button {
+    margin-bottom: 10px;
+}
+
+.quotes-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quotes-list li {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    margin-bottom: 12px;
+    padding: 15px 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column; /* Stack info vertically */
+    align-items: flex-start;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.quotes-list li strong {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.quotes-list li p {
+    margin: 0 0 5px 0;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.quotes-list li .quote-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.quotes-list li button {
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.quotes-list li button:first-of-type {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.quotes-list li button:first-of-type:hover {
+    background-color: #e0a800;
+}
+
+.quotes-list li button:last-of-type {
+    background-color: #dc3545;
+    color: white;
+}
+
+.quotes-list li button:last-of-type:hover {
+    background-color: #c82333;
+}
+
+.quotes-list .refresh-button {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 auto 20px auto;
+    display: block;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.quotes-list .refresh-button:hover {
+    background-color: #5a6268;
+}
