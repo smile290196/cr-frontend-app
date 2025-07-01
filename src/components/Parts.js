@@ -3,7 +3,10 @@ import React, { useState, useEffect, useCallback } from 'react'; // ADD useCallb
 import axios from 'axios';
 import './Parts.css';
 
-const API_URL = 'http://192.168.5.185:5000'; // Your backend URL
+//const API_URL = 'http://192.168.5.185:5000'; // Your backend URL
+// In a central config file (e.g., src/config.js or similar)
+const API_URL = process.env.REACT_APP_API_URL;
+export { API_URL };
 
 function Parts({ token, setMessage, setMessageType }) {
     const [parts, setParts] = useState([]);

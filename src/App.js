@@ -13,7 +13,9 @@ import Transactions from './components/Transactions';
 import CustomBuildComponents from './components/CustomBuildComponents';
 import './App.css';
 
+// In a central config file (e.g., src/config.js or similar)
 const API_URL = process.env.REACT_APP_API_URL;
+export { API_URL };
 // If you want to use a different API URL, you can set it in your .env file
 // e.g., REACT_APP_API_URL=http://
 function App() {
