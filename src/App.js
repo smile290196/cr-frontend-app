@@ -13,8 +13,9 @@ import Transactions from './components/Transactions';
 import CustomBuildComponents from './components/CustomBuildComponents';
 import './App.css';
 
-const API_URL = 'http://192.168.5.185:5000';
-
+const API_URL = process.env.REACT_APP_API_URL;
+// If you want to use a different API URL, you can set it in your .env file
+// e.g., REACT_APP_API_URL=http://
 function App() {
     const [token, setToken] = useState(localStorage.getItem('token'));
     const [message, setMessage] = useState('');
